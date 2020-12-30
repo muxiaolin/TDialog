@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TDialog.iml" filepath="$PROJECT_DIR$/TDialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tdialog/tdialog.iml" filepath="$PROJECT_DIR$/tdialog/tdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TDialog.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TDialog.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tdialog/TDialog.tdialog.iml" filepath="$PROJECT_DIR$/.idea/modules/tdialog/TDialog.tdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidDemo.TDialog.iml" filepath="$PROJECT_DIR$/.idea/modules/androidDemo.TDialog.iml" />
     </modules>
   </component>
 </project>
