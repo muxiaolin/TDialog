@@ -1,12 +1,13 @@
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray' //bintray插件，主要用来打包和上传库到bintray网站
+apply plugin: 'com.github.dcendents.android-maven' //maven插件,主要用来帮助生成和打包maven所需要上传的文件
 
-def siteUrl = 'https://github.com/Timmy-zzh/TDialog'   // 项目的主页
-def gitUrl = 'https://github.com/Timmy-zzh/TDialog.git'   // Git仓库的url
+def siteUrl = 'https://github.com/muxiaolin/TDialog'   // 项目的主页
+def gitUrl = 'https://github.com/muxiaolin/TDialog.git'   // Git仓库的url
 
-version = "2.1.1" //发布版本号
+version = "2.2.1" //发布版本号
 group = "com.timmy.tdialog" //最终引用形式，如compile 'com.timmy.tdialog:1.0.0'，其中tdialog在后面配置
 
+//完成maven相关文件的生成与打包
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -26,9 +27,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'timmy '        //填写bintray或者github的用户名
-                        name 'timmy '         //姓名
-                        email 'timmy.zzh@gmail.com'//邮箱
+                        id 'muxiaolin '        //填写bintray或者github的用户名
+                        name 'muxiaolin '         //姓名
+                        email 'muxiaoke2213@gmail.com'//邮箱
                     }
                 }
                 scm {
@@ -40,6 +41,8 @@ install {
         }
     }
 }
+
+//主要是生成javadoc.jar和sorce.jar
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'

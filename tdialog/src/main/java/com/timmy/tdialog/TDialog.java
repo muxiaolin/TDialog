@@ -150,7 +150,7 @@ public class TDialog extends BaseDialogFragment {
     }
 
     public TDialog show() {
-        Log.d(TAG, "show");
+//        Log.d(TAG, "show");
         try {
             FragmentTransaction ft = tController.getFragmentManager().beginTransaction();
             ft.add(this, tController.getTag());
@@ -343,7 +343,7 @@ public class TDialog extends BaseDialogFragment {
          */
         public TDialog create() {
             TDialog dialog = new TDialog();
-            Log.d(TAG, "create");
+//            Log.d(TAG, "create");
             //将数据从Buidler的DjParams中传递到DjDialog中
             params.apply(dialog.tController);
             return dialog;
