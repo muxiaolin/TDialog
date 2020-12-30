@@ -30,7 +30,7 @@ Dialog使用起来其实更简单,但是Google却是推荐尽量使用DialogFrag
 ```
  b.在model下build.gradle文件添加
 ```
-implementation 'com.timmy.tdialog:tdialog:2.1.1'
+implementation 'com.muxiaolin.tdialog:tdialog:2.2.1'
 ```
 2.Activity或者Fragment中使用
 ```
